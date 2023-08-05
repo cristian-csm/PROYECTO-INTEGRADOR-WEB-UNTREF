@@ -1,12 +1,28 @@
 
-body{
+*{
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    color: #000000f5;
+    text-align: center;
+    margin: 60px;
+    text-decoration: underline;
+    
+}
+h3{
+    margin: 20px;
 }
 header{
-    background-color: rgb(87, 92, 97);
+    background-color: rgb(21, 22, 24);
     color: aliceblue;
     padding: 10px;
     text-align: center;
@@ -16,7 +32,7 @@ img{
     width: 100%;
 }
 nav{
-    background-color: aliceblue;
+    background-color: rgb(147, 150, 153);
     padding: 10px;
 }
 nav ul{
@@ -31,13 +47,13 @@ nav ul  li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #b99595;
+    color: #ffffff;
     display: block;
     padding: 5px;
     border-radius: 5px;
 }
 nav ul li a:hover{
-    background-color: rgb(226, 221, 231);
+    background-color: rgb(214, 183, 245);
 }
 #logo{
     width: 50px;
@@ -49,7 +65,7 @@ nav ul li a:hover{
 .submenu{
     display: none;
     position: absolute;
-    background-color: aliceblue;
+    background-color: rgb(147, 150, 153);
     padding: 10px;
     border-radius: 5px;
 }
@@ -61,3 +77,121 @@ nav ul li:hover .submenu {
     display: block;
     padding: 5px;
 }
+#quienesSomos{
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: 1fr 1fr;
+    text-align:center;
+    
+}
+#quienesSomos #profesional{
+    background-color: #b99595;
+    display: flex;
+    width: 80%;
+    color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+#quienesSomos #profesional img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+#porqueElejirnos img{
+    width: 90%;
+}
+#porqueElejirnos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+#galeria{
+    background-color: azure;
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#piePagina{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    justify-items: center;
+    
+}
+#redesSociales{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    
+}
+ion-icon{
+    color: rgb(2, 3, 3);
+    font-size: 2rem;
+    
+}
+
+#servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+@media (max-width: 768px){
+    .menu {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    nav ul li:hover .submenu {
+        display: block;
+        position: absolute;
+        background-color: #555;
+    }
+
+    nav ul li .submenu a {
+        display: block;
+        padding: 5px;
+        color: #fff;
+        text-decoration: none;
+    }
+    #quienesSomos{
+        display: flex;
+        
+    }
+    #galeria{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    @media (min-width: 1200px){
+        #galeria{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+        }
+    }
+    
+        
+    }
